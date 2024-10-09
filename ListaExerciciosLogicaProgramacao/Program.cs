@@ -42,9 +42,10 @@ namespace ListaExerciciosLogicaProgramacao
             switch (op)
             {
                 case 0:
-                   // Use o comando abaixo para interromper o programa
+                    // Use o comando abaixo para interromper o programa
                     Environment.Exit(0);
                     break;
+                //LISTA 1
                 case 1:   //Menu da primeira Lista de atividades
                     Lista1 lista1 = new Lista1();
                     Console.Clear();
@@ -59,7 +60,7 @@ namespace ListaExerciciosLogicaProgramacao
 
                     switch (opLista1)
                     {
-                        
+
                         case 1:
                             Console.Clear();
                             Console.WriteLine("-------------------------------------------------------------");
@@ -81,8 +82,9 @@ namespace ListaExerciciosLogicaProgramacao
 
                     }
                     break;
-                case 2:
 
+                case 2:
+                //LISTA 2
                     Lista2 lista2 = new Lista2();
                     Console.Clear();
                     int opLista2 = 0;
@@ -114,32 +116,53 @@ namespace ListaExerciciosLogicaProgramacao
                         default:
                             Console.WriteLine("Tente outro item da lista");
                             break;
-
                     }
-
-
                     break;
+
+
+                //LISTA 3
                 case 3:
 
+                    Lista3 lista3 = new Lista3();
+                    Console.Clear();
+                    int opLista3 = 0;
+                    Console.WriteLine("*** Menu Principal - Lista 3 ***");
+                    Console.WriteLine("-------------------------------------------------------------");
+                    Console.WriteLine("1 - Primeira atividade ");
+                    Console.WriteLine("2 - Segunda atividade");
+                    Console.WriteLine("3 - Terceira  atividade");
+                    Console.WriteLine("Digite o numero da atividade: ");
+                    opLista3 = int.Parse(Console.ReadLine());
 
+                    switch (opLista3)
+                    {
+                        case 1:
+                            Console.Clear();
+                            Console.WriteLine("-------------------------------------------------------------");
+                            lista3.Exe1();
+                            break;
+                        case 2:
+                            Console.Clear();
+                            Console.WriteLine("-------------------------------------------------------------");
+                            lista3.Exe2();
+                            break;
+                        case 3:
+                            Console.Clear();
+                            Console.WriteLine("-------------------------------------------------------------");
+                            lista3.Exe3();
+                            break;
+                        default:
+                            Console.WriteLine("Tente outro item da lista");
+                            break;
 
-
+                    }
                     break;
-
-
-
-
-
-
-
-                default:
-                    Console.WriteLine("Tente novamente!!!!");
-                    break;
-                
 
             }
         }
     }
 }
+
+
 
 
